@@ -13,27 +13,21 @@
 var modifiedList = function (nums, head) {
   const set = new Set(nums);
   let node = head;
-  let returnListHead = undefined;
-  let returnList = undefined;
+  let cursor = head;
 
-  while (node) {
-    const val = node.val;
-
-    if (!set.has(val)) {
-      if (!returnList) {
-        returnListHead = new ListNode(val);
-        returnList = returnListHead;
-      } else {
-        const newList = new ListNode(val);
-        returnListHead.next = newList;
-        returnListHead = newList;
-      }
-    }
-
-    node = node.next;
+  while (set.has(cursor.val)) {
+    node = cursor.next;
+    cursor = cursor.next;
   }
 
-  return returnList;
+  while (cursor) {
+    while (cursor.next && set.has(cursor.next.val)) {
+      cursor.next = cursor.next.next;
+    }
+    cursor = cursor.next;
+  }
+
+  return node;
 };
 
 if (module?.exports) {
