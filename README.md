@@ -1,8 +1,8 @@
-# LeetCode Solutions
+## LeetCode Solutions
 
 I store all my LeetCode solutions in this repo
 
-## Daily
+### Daily
 
 Here are all the daily problems that i've completed
 
