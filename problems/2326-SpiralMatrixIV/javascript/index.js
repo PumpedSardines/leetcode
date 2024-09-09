@@ -63,21 +63,17 @@ function* spiralPositions(width, height) {
  * @return {number[][]}
  */
 var spiralMatrix = function(m, n, head) {
-  const retArray = new Array(m).fill(null).map((_) => new Array(n).fill(0));
-  const spiralIndexes = getSpiralIndexes(n, m);
+  const retArr = new Array(m).fill(0).map((_) => new Array(n).fill(0));
   let cursor = head;
 
-  for (let i = 0; i < m * n; i++) {
+  for (const [x, y] of spiralPositions(n, m)) {
     let val = -1;
-    if (cursor != null) val = cursor.val;
+    if (cursor) val = cursor.val;
 
-    const index = spiralIndexes[i];
-    const x = index % n;
-    const y = index / n;
-    retArray[y][x] = val;
+    retArr[y][x] = val;
 
-    if (cursor != null) cursor = cursor.next;
+    if (cursor) cursor = cursor.next;
   }
 
-  return retArray;
+  return retArr;
 };
