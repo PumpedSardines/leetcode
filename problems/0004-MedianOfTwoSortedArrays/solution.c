@@ -100,7 +100,6 @@ double findMedianSortedArrays(int* nums1, int nums1Size, int* nums2, int nums2Si
       }
     }
 
-    printf("%f, %f", median, median_next);
     return (median + median_next) / 2;
   }
 }

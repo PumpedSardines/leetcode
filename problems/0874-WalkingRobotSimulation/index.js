@@ -23,7 +23,6 @@ var robotSim = function(commands, obstacles) {
   let furthest = 0;
 
   command: for (const command of commands) {
-    console.log(dir, pos, command);
     if (command < 0) {
       dir = command === -1 ? (dir + 1) % 4 : (dir + 3) % 4;
     } else {
