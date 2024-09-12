@@ -8,7 +8,7 @@ Here are all the daily problems that i've completed
 
 | #    | Title                                          | Languages    | Difficulty | Date       |
 | ---- | ---------------------------------------------- | ------------ | ---------- | ---------- |
-| 2220 | Minimum Bit Flips to Convert Number            | C            | Easy       | 2024-09-10 |
+| 2220 | Minimum Bit Flips to Convert Number            | C            | Easy       | 2024-09-11 |
 | 2807 | Insert Greatest Common Divisors in Linked List | JavaScript   | Medium     | 2024-09-10 |
 | 2326 | Spiral Matrix IV                               | C,JavaScript | Medium     | 2024-09-09 |
 | 725  | Split Linked List in Parts                     | JavaScript   | Medium     | 2024-09-08 |
