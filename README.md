@@ -8,6 +8,7 @@ Here are all the daily problems that i've completed
 
 | #    | Title                                          | Languages       | Difficulty | Date       |
 | ---- | ---------------------------------------------- | --------------- | ---------- | ---------- |
+| 2419 | Longest Subarray With Maximum Bitwise AND      | JavaScript      | Medium     | 2024-09-14 |
 | 1310 | XOR Queries on a Subarray                      | Rust,JavaScript | Medium     | 2024-09-13 |
 | 1684 | Count the Number of Consistent Strings         | C               | Easy       | 2024-09-12 |
 | 2220 | Minimum Bit Flips to Convert Number            | C               | Easy       | 2024-09-11 |
