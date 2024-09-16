@@ -3,19 +3,21 @@
  * @return {number}
  */
 var findMinDifference = function (timePoints) {
-  const minutes = timePoints.flatMap((v) => {
-    if (v === "00:00") return [24 * 60, 0];
-    const base = +v.split(":")[0] * 60 + +v.split(":")[1];
-    return [base, base + 24 * 60];
-  });
-
-  let max = Infinity;
-  for (let i = 0; i < minutes.length; i++) {
-    for (let j = i + 1; j < minutes.length; j++) {
-      max = Math.min(Math.abs(minutes[i] - minutes[j]), max);
-    }
-  }
-  return max;
+  return timePoints
+    .flatMap((v) => {
+      const base = +v.split(":")[0] * 60 + +v.split(":")[1];
+      return [base, base + 24 * 60];
+    })
+    .sort((a, b) => a - b)
+    .reduce(
+      ({ last, min }, cur) => {
+        return {
+          last: cur,
+          min: Math.min(cur - (last ?? -Infinity), min),
+        };
+      },
+      { last: null, min: Infinity },
+    ).min;
 };
 
 module.exports = findMinDifference;
