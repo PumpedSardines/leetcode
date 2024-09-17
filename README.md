@@ -8,6 +8,7 @@ Here are all the daily problems that i've completed
 
 | #    | Title                                                       | Languages       | Difficulty | Date       |
 | ---- | ----------------------------------------------------------- | --------------- | ---------- | ---------- |
+| 884  | Uncommon Words from Two Sentences                           | JavaScript      | Easy       | 2024-09-17 |
 | 539  | Minimum Time Difference                                     | JavaScript      | Medium     | 2024-09-16 |
 | 1371 | Find the Longest Substring Containing Vowels in Even Counts | JavaScript      | Medium     | 2024-09-15 |
 | 2419 | Longest Subarray With Maximum Bitwise AND                   | JavaScript      | Medium     | 2024-09-14 |
