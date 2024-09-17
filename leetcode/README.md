@@ -1,6 +1,6 @@
 ## LeetCode Solutions
 
-I store all my LeetCode solutions in this repo
+Contains all [leetcode](https://leetcode.com) problems i've solved
 
 ### Daily
 
