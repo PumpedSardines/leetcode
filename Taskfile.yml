@@ -1,0 +1,6 @@
+version: "3"
+
+tasks:
+  "leetcode:daily":
+    cmds:
+      - node ./.helpers/fetch-daily-leetcode/index.js
