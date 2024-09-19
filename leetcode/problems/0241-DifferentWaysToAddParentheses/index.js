@@ -17,16 +17,16 @@ var diffWaysToCompute = (expression) => {
       });
     }
 
-    const retArr = [];
-    for (let i = 1; i < exp.length / 2; i++) {
-      const lhs = exp.slice(0, i * 2 - 1);
-      const operator = exp.slice(i * 2 - 1, i * 2);
-      const rhs = exp.slice(i * 2);
+    return new Array(Math.floor(exp.length / 2))
+      .fill(0)
+      .map((_, i) => i + 1)
+      .flatMap((i) => {
+        const lhs = exp.slice(0, i * 2 - 1);
+        const operator = exp.slice(i * 2 - 1, i * 2);
+        const rhs = exp.slice(i * 2);
 
-      retArr.push(...r([lhs, operator, rhs]));
-    }
-
-    return retArr;
+        return r([lhs, operator, rhs]);
+      });
   };
 
   return r(expression.split(/([+*-])/g)).map((v) => parseInt(v));
