@@ -8,6 +8,7 @@ Here are all the daily problems that i've completed
 
 | #    | Title                                                       | Languages       | Difficulty | Date       |
 | ---- | ----------------------------------------------------------- | --------------- | ---------- | ---------- |
+| 214  | Shortest Palindrome                                         | JavaScript      | Hard       | 2024-09-20 |
 | 241  | Different Ways to Add Parentheses                           | JavaScript      | Medium     | 2024-09-19 |
 | 179  | Largest Number                                              | JavaScript      | Medium     | 2024-09-18 |
 | 884  | Uncommon Words from Two Sentences                           | JavaScript      | Easy       | 2024-09-17 |
